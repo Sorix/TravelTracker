@@ -13,9 +13,9 @@ protocol ProfileViewControllerProtocol: AnyObject {
 final class ProfileViewController: UIViewController {
     
     private let presenter: PresenterProtocol
-    private let customView: PasscodeViewProtocol
+    private let customView: UIView
     
-    init(presenter: PresenterProtocol, customView: PasscodeViewProtocol) {
+    init(presenter: PresenterProtocol, customView: UIView) {
         self.presenter = presenter
         self.customView = customView
         super.init(nibName: nil, bundle: nil)
@@ -41,7 +41,7 @@ final class ProfileViewController: UIViewController {
 extension ProfileViewController: PasscodeViewControllerProtocol {
     
     func configure(with model: PasscodeModel) {
-        customView.configure(with: model)
+        //customView.configure(with: model)
     }
 }
 

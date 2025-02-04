@@ -2,7 +2,7 @@
 //  Created by Алексей on 18.11.2024.
 //
 
-import Foundation
+import UIKit
 import RouteComposer
 
 final class ProfileModuleFactory: Factory {
@@ -13,7 +13,7 @@ final class ProfileModuleFactory: Factory {
     func build(with context: Any?) throws -> ProfileViewController {
         let presenter = ProfilePresenter()
 
-        let view = PasscodeView()
+        let view = UIView()
         let viewController = ProfileViewController(presenter: presenter, customView: view)
         return viewController
     }
