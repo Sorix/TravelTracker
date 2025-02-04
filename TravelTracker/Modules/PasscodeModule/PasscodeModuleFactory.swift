@@ -5,7 +5,6 @@
 import Foundation
 import RouteComposer
 
-
 final class PasscodeModuleFactory: Factory {
     
     typealias ViewController = PasscodeViewController

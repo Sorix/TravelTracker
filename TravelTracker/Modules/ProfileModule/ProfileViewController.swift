@@ -6,16 +6,16 @@ import UIKit
 
 
 protocol ProfileViewControllerProtocol: AnyObject {
-    func configure(with model: PasscodeModel)
+    func configure(with model: ProfileModel)
 }
 
 
 final class ProfileViewController: UIViewController {
     
     private let presenter: PresenterProtocol
-    private let customView: UIView
+    private let customView: ProfileView
     
-    init(presenter: PresenterProtocol, customView: UIView) {
+    init(presenter: PresenterProtocol, customView: ProfileView) {
         self.presenter = presenter
         self.customView = customView
         super.init(nibName: nil, bundle: nil)
@@ -36,12 +36,10 @@ final class ProfileViewController: UIViewController {
     }
 }
 
-//MARK: - PasscodeEntryViewController Extension
-
-extension ProfileViewController: PasscodeViewControllerProtocol {
+extension ProfileViewController: ProfileViewControllerProtocol {
     
-    func configure(with model: PasscodeModel) {
-        //customView.configure(with: model)
+    func configure(with model: ProfileModel) {
+        customView.configure(with: model)
     }
 }
 

@@ -11,10 +11,11 @@ final class ProfileModuleFactory: Factory {
     typealias Context = Any?
     
     func build(with context: Any?) throws -> ProfileViewController {
-        let presenter = ProfilePresenter()
-
-        let view = UIView()
+        let model = ProfileModel(username: "@Someuser")
+        let presenter = ProfilePresenter(model: model)
+        let view = ProfileView()
         let viewController = ProfileViewController(presenter: presenter, customView: view)
+        presenter.viewController = viewController
         return viewController
     }
 }

@@ -4,14 +4,12 @@
 
 import Foundation
 
-public enum PasscodeValidationResult {
-    
+enum PasscodeValidationResult {
     case success
     case failure(Error)
 }
 
-public extension PasscodeValidationResult {
-    
+extension PasscodeValidationResult {
     var isSuccessful: Bool {
         if case .success = self { true } else { false }
     }
