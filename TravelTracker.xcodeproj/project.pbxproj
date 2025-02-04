@@ -7,53 +7,81 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8A0C62F62C9C418D00AE8C65 /* PinCheckManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0C62F52C9C418D00AE8C65 /* PinCheckManager.swift */; };
-		8A0C62F92C9C553800AE8C65 /* PinCreationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0C62F82C9C552C00AE8C65 /* PinCreationManager.swift */; };
 		8A0C63012C9C7E8800AE8C65 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8A0C63002C9C7E8800AE8C65 /* SnapKit */; };
-		8A0C63032C9C99B500AE8C65 /* PinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0C63022C9C99B000AE8C65 /* PinViewController.swift */; };
 		8A0C630D2C9EDB5A00AE8C65 /* RouteComposer in Frameworks */ = {isa = PBXBuildFile; productRef = 8A0C630C2C9EDB5A00AE8C65 /* RouteComposer */; };
-		8A0C63112C9EE37A00AE8C65 /* PinFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0C63102C9EE37200AE8C65 /* PinFactory.swift */; };
 		8A0C63152C9FF19100AE8C65 /* ApplicationConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0C63142C9FF18900AE8C65 /* ApplicationConfiguration.swift */; };
 		8A0C63172CA0187800AE8C65 /* DefaultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0C63162CA0187200AE8C65 /* DefaultVC.swift */; };
 		8A0C63192CA0199200AE8C65 /* DefaultFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0C63182CA0198800AE8C65 /* DefaultFactory.swift */; };
-		8A0C631C2CA084E800AE8C65 /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0C631B2CA084E500AE8C65 /* Closures.swift */; };
+		8A0C631C2CA084E800AE8C65 /* Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0C631B2CA084E500AE8C65 /* Handler.swift */; };
 		8A0C631E2CA0A0C500AE8C65 /* ContextHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0C631D2CA0A0BC00AE8C65 /* ContextHolder.swift */; };
 		8A0C63202CA0ADB500AE8C65 /* ScreenDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0C631F2CA0ADAF00AE8C65 /* ScreenDefinition.swift */; };
-		8A0C63232CA17E0400AE8C65 /* PinEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0C63222CA17DFE00AE8C65 /* PinEntryView.swift */; };
-		8A0C63252CA18E2400AE8C65 /* PinEntryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0C63242CA18E1F00AE8C65 /* PinEntryViewModel.swift */; };
-		8A0C63272CA18EAD00AE8C65 /* PinEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0C63262CA18EA800AE8C65 /* PinEntryViewController.swift */; };
-		8A0C63292CA18EDD00AE8C65 /* PinEntryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0C63282CA18ED800AE8C65 /* PinEntryFactory.swift */; };
-		8A0C632B2CA18F1900AE8C65 /* PinEntryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0C632A2CA18F1500AE8C65 /* PinEntryModel.swift */; };
-		8A0C63342CA95E5600AE8C65 /* PinEntryIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0C63332CA95E4B00AE8C65 /* PinEntryIndicatorView.swift */; };
-		8A0C63372CA9F97300AE8C65 /* PinEntryKeypadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0C63362CA9F96B00AE8C65 /* PinEntryKeypadView.swift */; };
+		8A0C63232CA17E0400AE8C65 /* PinCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0C63222CA17DFE00AE8C65 /* PinCodeView.swift */; };
+		8A0C63252CA18E2400AE8C65 /* PinCodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0C63242CA18E1F00AE8C65 /* PinCodeViewModel.swift */; };
+		8A0C63272CA18EAD00AE8C65 /* PinCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0C63262CA18EA800AE8C65 /* PinCodeViewController.swift */; };
+		8A0C63292CA18EDD00AE8C65 /* PinCodeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0C63282CA18ED800AE8C65 /* PinCodeFactory.swift */; };
+		8A0C632B2CA18F1900AE8C65 /* PinCodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0C632A2CA18F1500AE8C65 /* PinCodeModel.swift */; };
+		8A0C63342CA95E5600AE8C65 /* PinCodeView.IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0C63332CA95E4B00AE8C65 /* PinCodeView.IndicatorView.swift */; };
+		8A0C63372CA9F97300AE8C65 /* PinCodeView.KeypadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0C63362CA9F96B00AE8C65 /* PinCodeView.KeypadView.swift */; };
+		8A22A48D2D33CDED007A1F7D /* PresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A22A48C2D33CDE9007A1F7D /* PresenterProtocol.swift */; };
+		8A22A4912D33EB03007A1F7D /* PasscodePresenterDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A22A4902D33EAEB007A1F7D /* PasscodePresenterDefault.swift */; };
+		8A22A4932D33F358007A1F7D /* PasscodeValidationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A22A4922D33F34E007A1F7D /* PasscodeValidationPresenter.swift */; };
+		8A22A4952D33FC36007A1F7D /* PasscodeSetupPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A22A4942D33FC2D007A1F7D /* PasscodeSetupPresenter.swift */; };
+		8A2C4E7C2D0B610400C8CB01 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2C4E7B2D0B60FB00C8CB01 /* GridView.swift */; };
+		8A2C4E7E2D0B62BD00C8CB01 /* KeypadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2C4E7D2D0B62AB00C8CB01 /* KeypadView.swift */; };
+		8A34CD992CE8D1CD00D055A1 /* PasscodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A34CD982CE8D1C900D055A1 /* PasscodeModel.swift */; };
+		8A34CD9B2CE8D26500D055A1 /* PasscodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A34CD9A2CE8D25D00D055A1 /* PasscodeViewController.swift */; };
+		8A34CD9E2CE8D29300D055A1 /* PasscodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A34CD9D2CE8D28E00D055A1 /* PasscodeView.swift */; };
+		8A34CDA22CE8E44200D055A1 /* ProgressIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A34CDA12CE8E43400D055A1 /* ProgressIndicatorView.swift */; };
+		8A37A64B2CEA434C00372155 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A37A64A2CEA434900372155 /* Coordinator.swift */; };
+		8A37A64F2CEB4F2100372155 /* PasscodeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A37A64E2CEB4F1C00372155 /* PasscodeManager.swift */; };
+		8A37A6512CEB792F00372155 /* PromptLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A37A6502CEB791600372155 /* PromptLabel.swift */; };
+		8A37A6532CEBC8F300372155 /* PasscodeModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A37A6522CEBC8E400372155 /* PasscodeModuleFactory.swift */; };
 		8A7277C82C9728BD00C03C73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7277C72C9728BD00C03C73 /* AppDelegate.swift */; };
 		8A7277CA2C9728BD00C03C73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7277C92C9728BD00C03C73 /* SceneDelegate.swift */; };
 		8A7277D22C9728BD00C03C73 /* TravelTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8A7277D02C9728BD00C03C73 /* TravelTracker.xcdatamodeld */; };
 		8A7277D42C9728BF00C03C73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A7277D32C9728BF00C03C73 /* Assets.xcassets */; };
 		8A7277D72C9728BF00C03C73 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8A7277D62C9728BF00C03C73 /* Base */; };
-		8A7277E72C97302000C03C73 /* PinPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7277E62C97302000C03C73 /* PinPresenter.swift */; };
-		8A7277F82C99B13300C03C73 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7277F72C99B13300C03C73 /* KeychainManager.swift */; };
-		8A7277FA2C9B387F00C03C73 /* PinManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7277F92C9B387F00C03C73 /* PinManagerProtocol.swift */; };
+		8A7277F82C99B13300C03C73 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7277F72C99B13300C03C73 /* KeychainService.swift */; };
+		8A9A2E082CB6F874002E8C63 /* FlowHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9A2E072CB6F86E002E8C63 /* FlowHolder.swift */; };
+		8A9BB0232CB0512800E47076 /* PinCodeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9BB0222CB0512300E47076 /* PinCodeService.swift */; };
+		8A9BB0282CB59BCA00E47076 /* PinCodeEntryFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9BB0272CB59BC500E47076 /* PinCodeEntryFlow.swift */; };
+		8A9BB02A2CB5B33100E47076 /* PinCodeSetupFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9BB0292CB5B32B00E47076 /* PinCodeSetupFlow.swift */; };
+		8AC9827E2D4A859100AEED49 /* ProfileModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9827D2D4A858900AEED49 /* ProfileModuleFactory.swift */; };
+		8AC982802D4A85EF00AEED49 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9827F2D4A85E600AEED49 /* ProfileViewController.swift */; };
+		8AC982822D4A864B00AEED49 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC982812D4A864400AEED49 /* ProfileModel.swift */; };
+		8AC982842D4A883300AEED49 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC982832D4A882D00AEED49 /* ProfilePresenter.swift */; };
+		8AC982882D4A913000AEED49 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC982872D4A912900AEED49 /* AppConfiguration.swift */; };
+		8AC9828A2D4B63A200AEED49 /* PasscodeRoutingInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC982892D4B638100AEED49 /* PasscodeRoutingInterceptor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8A0C62F52C9C418D00AE8C65 /* PinCheckManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCheckManager.swift; sourceTree = "<group>"; };
-		8A0C62F82C9C552C00AE8C65 /* PinCreationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCreationManager.swift; sourceTree = "<group>"; };
-		8A0C63022C9C99B000AE8C65 /* PinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinViewController.swift; sourceTree = "<group>"; };
-		8A0C63102C9EE37200AE8C65 /* PinFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinFactory.swift; sourceTree = "<group>"; };
 		8A0C63142C9FF18900AE8C65 /* ApplicationConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationConfiguration.swift; sourceTree = "<group>"; };
 		8A0C63162CA0187200AE8C65 /* DefaultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultVC.swift; sourceTree = "<group>"; };
 		8A0C63182CA0198800AE8C65 /* DefaultFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultFactory.swift; sourceTree = "<group>"; };
-		8A0C631B2CA084E500AE8C65 /* Closures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closures.swift; sourceTree = "<group>"; };
+		8A0C631B2CA084E500AE8C65 /* Handler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Handler.swift; sourceTree = "<group>"; };
 		8A0C631D2CA0A0BC00AE8C65 /* ContextHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextHolder.swift; sourceTree = "<group>"; };
 		8A0C631F2CA0ADAF00AE8C65 /* ScreenDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenDefinition.swift; sourceTree = "<group>"; };
-		8A0C63222CA17DFE00AE8C65 /* PinEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinEntryView.swift; sourceTree = "<group>"; };
-		8A0C63242CA18E1F00AE8C65 /* PinEntryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinEntryViewModel.swift; sourceTree = "<group>"; };
-		8A0C63262CA18EA800AE8C65 /* PinEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinEntryViewController.swift; sourceTree = "<group>"; };
-		8A0C63282CA18ED800AE8C65 /* PinEntryFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinEntryFactory.swift; sourceTree = "<group>"; };
-		8A0C632A2CA18F1500AE8C65 /* PinEntryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinEntryModel.swift; sourceTree = "<group>"; };
-		8A0C63332CA95E4B00AE8C65 /* PinEntryIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinEntryIndicatorView.swift; sourceTree = "<group>"; };
-		8A0C63362CA9F96B00AE8C65 /* PinEntryKeypadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinEntryKeypadView.swift; sourceTree = "<group>"; };
+		8A0C63222CA17DFE00AE8C65 /* PinCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCodeView.swift; sourceTree = "<group>"; };
+		8A0C63242CA18E1F00AE8C65 /* PinCodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCodeViewModel.swift; sourceTree = "<group>"; };
+		8A0C63262CA18EA800AE8C65 /* PinCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCodeViewController.swift; sourceTree = "<group>"; };
+		8A0C63282CA18ED800AE8C65 /* PinCodeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCodeFactory.swift; sourceTree = "<group>"; };
+		8A0C632A2CA18F1500AE8C65 /* PinCodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCodeModel.swift; sourceTree = "<group>"; };
+		8A0C63332CA95E4B00AE8C65 /* PinCodeView.IndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCodeView.IndicatorView.swift; sourceTree = "<group>"; };
+		8A0C63362CA9F96B00AE8C65 /* PinCodeView.KeypadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCodeView.KeypadView.swift; sourceTree = "<group>"; };
+		8A22A48C2D33CDE9007A1F7D /* PresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterProtocol.swift; sourceTree = "<group>"; };
+		8A22A4902D33EAEB007A1F7D /* PasscodePresenterDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodePresenterDefault.swift; sourceTree = "<group>"; };
+		8A22A4922D33F34E007A1F7D /* PasscodeValidationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeValidationPresenter.swift; sourceTree = "<group>"; };
+		8A22A4942D33FC2D007A1F7D /* PasscodeSetupPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeSetupPresenter.swift; sourceTree = "<group>"; };
+		8A2C4E7B2D0B60FB00C8CB01 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		8A2C4E7D2D0B62AB00C8CB01 /* KeypadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeypadView.swift; sourceTree = "<group>"; };
+		8A34CD982CE8D1C900D055A1 /* PasscodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeModel.swift; sourceTree = "<group>"; };
+		8A34CD9A2CE8D25D00D055A1 /* PasscodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeViewController.swift; sourceTree = "<group>"; };
+		8A34CD9D2CE8D28E00D055A1 /* PasscodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeView.swift; sourceTree = "<group>"; };
+		8A34CDA12CE8E43400D055A1 /* ProgressIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressIndicatorView.swift; sourceTree = "<group>"; };
+		8A37A64A2CEA434900372155 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		8A37A64E2CEB4F1C00372155 /* PasscodeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeManager.swift; sourceTree = "<group>"; };
+		8A37A6502CEB791600372155 /* PromptLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptLabel.swift; sourceTree = "<group>"; };
+		8A37A6522CEBC8E400372155 /* PasscodeModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeModuleFactory.swift; sourceTree = "<group>"; };
 		8A7277C42C9728BD00C03C73 /* TravelTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A7277C72C9728BD00C03C73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A7277C92C9728BD00C03C73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,9 +89,17 @@
 		8A7277D32C9728BF00C03C73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A7277D62C9728BF00C03C73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A7277D82C9728BF00C03C73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8A7277E62C97302000C03C73 /* PinPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinPresenter.swift; sourceTree = "<group>"; };
-		8A7277F72C99B13300C03C73 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
-		8A7277F92C9B387F00C03C73 /* PinManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinManagerProtocol.swift; sourceTree = "<group>"; };
+		8A7277F72C99B13300C03C73 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		8A9A2E072CB6F86E002E8C63 /* FlowHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowHolder.swift; sourceTree = "<group>"; };
+		8A9BB0222CB0512300E47076 /* PinCodeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCodeService.swift; sourceTree = "<group>"; };
+		8A9BB0272CB59BC500E47076 /* PinCodeEntryFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCodeEntryFlow.swift; sourceTree = "<group>"; };
+		8A9BB0292CB5B32B00E47076 /* PinCodeSetupFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCodeSetupFlow.swift; sourceTree = "<group>"; };
+		8AC9827D2D4A858900AEED49 /* ProfileModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModuleFactory.swift; sourceTree = "<group>"; };
+		8AC9827F2D4A85E600AEED49 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		8AC982812D4A864400AEED49 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		8AC982832D4A882D00AEED49 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		8AC982872D4A912900AEED49 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		8AC982892D4B638100AEED49 /* PasscodeRoutingInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeRoutingInterceptor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,16 +115,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8A0C62F72C9C421C00AE8C65 /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-				8A0C62F52C9C418D00AE8C65 /* PinCheckManager.swift */,
-				8A0C62F82C9C552C00AE8C65 /* PinCreationManager.swift */,
-			);
-			path = Managers;
-			sourceTree = "<group>";
-		};
-		8A0C63042C9EB8C200AE8C65 /* Application */ = {
+		8A0C63042C9EB8C200AE8C65 /* Common */ = {
 			isa = PBXGroup;
 			children = (
 				8A0C631F2CA0ADAF00AE8C65 /* ScreenDefinition.swift */,
@@ -96,25 +123,19 @@
 				8A0C63162CA0187200AE8C65 /* DefaultVC.swift */,
 				8A0C63142C9FF18900AE8C65 /* ApplicationConfiguration.swift */,
 			);
-			path = Application;
-			sourceTree = "<group>";
-		};
-		8A0C631A2CA084B500AE8C65 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				8A0C631B2CA084E500AE8C65 /* Closures.swift */,
-			);
-			path = Core;
+			path = Common;
 			sourceTree = "<group>";
 		};
 		8A0C63212CA15D0400AE8C65 /* PinEntry */ = {
 			isa = PBXGroup;
 			children = (
+				8A9A2E042CB6E3C1002E8C63 /* Protocols */,
+				8A9BB0242CB59B8200E47076 /* Flows */,
 				8A0C63352CA9F93C00AE8C65 /* Views */,
-				8A0C63282CA18ED800AE8C65 /* PinEntryFactory.swift */,
-				8A0C632A2CA18F1500AE8C65 /* PinEntryModel.swift */,
-				8A0C63262CA18EA800AE8C65 /* PinEntryViewController.swift */,
-				8A0C63242CA18E1F00AE8C65 /* PinEntryViewModel.swift */,
+				8A0C63282CA18ED800AE8C65 /* PinCodeFactory.swift */,
+				8A0C632A2CA18F1500AE8C65 /* PinCodeModel.swift */,
+				8A0C63262CA18EA800AE8C65 /* PinCodeViewController.swift */,
+				8A0C63242CA18E1F00AE8C65 /* PinCodeViewModel.swift */,
 			);
 			path = PinEntry;
 			sourceTree = "<group>";
@@ -122,9 +143,42 @@
 		8A0C63352CA9F93C00AE8C65 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8A0C63222CA17DFE00AE8C65 /* PinEntryView.swift */,
-				8A0C63332CA95E4B00AE8C65 /* PinEntryIndicatorView.swift */,
-				8A0C63362CA9F96B00AE8C65 /* PinEntryKeypadView.swift */,
+				8A0C63222CA17DFE00AE8C65 /* PinCodeView.swift */,
+				8A0C63332CA95E4B00AE8C65 /* PinCodeView.IndicatorView.swift */,
+				8A0C63362CA9F96B00AE8C65 /* PinCodeView.KeypadView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8A2C4E7A2D0B60F100C8CB01 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8A2C4E7B2D0B60FB00C8CB01 /* GridView.swift */,
+				8A0C631B2CA084E500AE8C65 /* Handler.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8A34CD972CE8D1A200D055A1 /* PasscodeModule */ = {
+			isa = PBXGroup;
+			children = (
+				8AA0169B2D48CC8600964091 /* Presenters */,
+				8A34CD9C2CE8D28300D055A1 /* Views */,
+				8A37A6522CEBC8E400372155 /* PasscodeModuleFactory.swift */,
+				8AC982892D4B638100AEED49 /* PasscodeRoutingInterceptor.swift */,
+				8A34CD982CE8D1C900D055A1 /* PasscodeModel.swift */,
+				8A34CD9A2CE8D25D00D055A1 /* PasscodeViewController.swift */,
+			);
+			path = PasscodeModule;
+			sourceTree = "<group>";
+		};
+		8A34CD9C2CE8D28300D055A1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8A2C4E7D2D0B62AB00C8CB01 /* KeypadView.swift */,
+				8A34CD9D2CE8D28E00D055A1 /* PasscodeView.swift */,
+				8A37A6502CEB791600372155 /* PromptLabel.swift */,
+				8A34CDA12CE8E43400D055A1 /* ProgressIndicatorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -148,10 +202,10 @@
 		8A7277C62C9728BD00C03C73 /* TravelTracker */ = {
 			isa = PBXGroup;
 			children = (
-				8A0C631A2CA084B500AE8C65 /* Core */,
+				8AC982862D4A911600AEED49 /* Configuration */,
 				8A7277F52C99B11100C03C73 /* Services */,
 				8A7277F22C997FD200C03C73 /* Protocols */,
-				8A7277E02C972AB500C03C73 /* Common */,
+				8A7277E02C972AB500C03C73 /* App */,
 				8A7277DE2C9728DE00C03C73 /* Modules */,
 				8A7277D32C9728BF00C03C73 /* Assets.xcassets */,
 				8A7277D52C9728BF00C03C73 /* LaunchScreen.storyboard */,
@@ -164,37 +218,29 @@
 		8A7277DE2C9728DE00C03C73 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				8A0C63212CA15D0400AE8C65 /* PinEntry */,
-				8A0C63042C9EB8C200AE8C65 /* Application */,
-				8A7277DF2C9728E400C03C73 /* PinModule */,
+				8AC9827C2D4A84DA00AEED49 /* ProfileModule */,
+				8A34CD972CE8D1A200D055A1 /* PasscodeModule */,
+				8A0C63042C9EB8C200AE8C65 /* Common */,
+				8AC982852D4A8DEA00AEED49 /* Temp */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		8A7277DF2C9728E400C03C73 /* PinModule */ = {
+		8A7277E02C972AB500C03C73 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				8A7277FB2C9B388300C03C73 /* Protocols */,
-				8A0C62F72C9C421C00AE8C65 /* Managers */,
-				8A0C63102C9EE37200AE8C65 /* PinFactory.swift */,
-				8A0C63022C9C99B000AE8C65 /* PinViewController.swift */,
-				8A7277E62C97302000C03C73 /* PinPresenter.swift */,
-			);
-			path = PinModule;
-			sourceTree = "<group>";
-		};
-		8A7277E02C972AB500C03C73 /* Common */ = {
-			isa = PBXGroup;
-			children = (
+				8A2C4E7A2D0B60F100C8CB01 /* Helpers */,
 				8A7277C72C9728BD00C03C73 /* AppDelegate.swift */,
 				8A7277C92C9728BD00C03C73 /* SceneDelegate.swift */,
 			);
-			path = Common;
+			path = App;
 			sourceTree = "<group>";
 		};
 		8A7277F22C997FD200C03C73 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				8A22A48C2D33CDE9007A1F7D /* PresenterProtocol.swift */,
+				8A37A64A2CEA434900372155 /* Coordinator.swift */,
 				8A0C631D2CA0A0BC00AE8C65 /* ContextHolder.swift */,
 			);
 			path = Protocols;
@@ -203,17 +249,65 @@
 		8A7277F52C99B11100C03C73 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				8A7277F72C99B13300C03C73 /* KeychainManager.swift */,
+				8A37A64E2CEB4F1C00372155 /* PasscodeManager.swift */,
+				8A9BB0222CB0512300E47076 /* PinCodeService.swift */,
+				8A7277F72C99B13300C03C73 /* KeychainService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
 		};
-		8A7277FB2C9B388300C03C73 /* Protocols */ = {
+		8A9A2E042CB6E3C1002E8C63 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				8A7277F92C9B387F00C03C73 /* PinManagerProtocol.swift */,
+				8A9A2E072CB6F86E002E8C63 /* FlowHolder.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		8A9BB0242CB59B8200E47076 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				8A9BB0272CB59BC500E47076 /* PinCodeEntryFlow.swift */,
+				8A9BB0292CB5B32B00E47076 /* PinCodeSetupFlow.swift */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		8AA0169B2D48CC8600964091 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				8A22A4902D33EAEB007A1F7D /* PasscodePresenterDefault.swift */,
+				8A22A4922D33F34E007A1F7D /* PasscodeValidationPresenter.swift */,
+				8A22A4942D33FC2D007A1F7D /* PasscodeSetupPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		8AC9827C2D4A84DA00AEED49 /* ProfileModule */ = {
+			isa = PBXGroup;
+			children = (
+				8AC982832D4A882D00AEED49 /* ProfilePresenter.swift */,
+				8AC982812D4A864400AEED49 /* ProfileModel.swift */,
+				8AC9827F2D4A85E600AEED49 /* ProfileViewController.swift */,
+				8AC9827D2D4A858900AEED49 /* ProfileModuleFactory.swift */,
+			);
+			path = ProfileModule;
+			sourceTree = "<group>";
+		};
+		8AC982852D4A8DEA00AEED49 /* Temp */ = {
+			isa = PBXGroup;
+			children = (
+				8A0C63212CA15D0400AE8C65 /* PinEntry */,
+			);
+			path = Temp;
+			sourceTree = "<group>";
+		};
+		8AC982862D4A911600AEED49 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				8AC982872D4A912900AEED49 /* AppConfiguration.swift */,
+			);
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,29 +388,47 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A9BB0232CB0512800E47076 /* PinCodeService.swift in Sources */,
+				8A37A64F2CEB4F2100372155 /* PasscodeManager.swift in Sources */,
+				8A2C4E7E2D0B62BD00C8CB01 /* KeypadView.swift in Sources */,
 				8A0C63192CA0199200AE8C65 /* DefaultFactory.swift in Sources */,
-				8A0C63292CA18EDD00AE8C65 /* PinEntryFactory.swift in Sources */,
+				8A0C63292CA18EDD00AE8C65 /* PinCodeFactory.swift in Sources */,
+				8A9BB0282CB59BCA00E47076 /* PinCodeEntryFlow.swift in Sources */,
 				8A0C63152C9FF19100AE8C65 /* ApplicationConfiguration.swift in Sources */,
-				8A0C63232CA17E0400AE8C65 /* PinEntryView.swift in Sources */,
-				8A0C63252CA18E2400AE8C65 /* PinEntryViewModel.swift in Sources */,
-				8A0C62F92C9C553800AE8C65 /* PinCreationManager.swift in Sources */,
-				8A0C63342CA95E5600AE8C65 /* PinEntryIndicatorView.swift in Sources */,
-				8A0C63272CA18EAD00AE8C65 /* PinEntryViewController.swift in Sources */,
+				8A0C63232CA17E0400AE8C65 /* PinCodeView.swift in Sources */,
+				8AC9827E2D4A859100AEED49 /* ProfileModuleFactory.swift in Sources */,
+				8A34CD992CE8D1CD00D055A1 /* PasscodeModel.swift in Sources */,
+				8A0C63252CA18E2400AE8C65 /* PinCodeViewModel.swift in Sources */,
+				8A0C63342CA95E5600AE8C65 /* PinCodeView.IndicatorView.swift in Sources */,
+				8A0C63272CA18EAD00AE8C65 /* PinCodeViewController.swift in Sources */,
+				8A22A4912D33EB03007A1F7D /* PasscodePresenterDefault.swift in Sources */,
 				8A7277D22C9728BD00C03C73 /* TravelTracker.xcdatamodeld in Sources */,
-				8A0C63032C9C99B500AE8C65 /* PinViewController.swift in Sources */,
-				8A7277FA2C9B387F00C03C73 /* PinManagerProtocol.swift in Sources */,
+				8AC9828A2D4B63A200AEED49 /* PasscodeRoutingInterceptor.swift in Sources */,
+				8A22A4952D33FC36007A1F7D /* PasscodeSetupPresenter.swift in Sources */,
 				8A7277C82C9728BD00C03C73 /* AppDelegate.swift in Sources */,
-				8A0C63112C9EE37A00AE8C65 /* PinFactory.swift in Sources */,
-				8A0C631C2CA084E800AE8C65 /* Closures.swift in Sources */,
-				8A0C62F62C9C418D00AE8C65 /* PinCheckManager.swift in Sources */,
+				8A9A2E082CB6F874002E8C63 /* FlowHolder.swift in Sources */,
+				8A34CD9B2CE8D26500D055A1 /* PasscodeViewController.swift in Sources */,
+				8A37A6532CEBC8F300372155 /* PasscodeModuleFactory.swift in Sources */,
+				8A0C631C2CA084E800AE8C65 /* Handler.swift in Sources */,
+				8A22A48D2D33CDED007A1F7D /* PresenterProtocol.swift in Sources */,
 				8A7277CA2C9728BD00C03C73 /* SceneDelegate.swift in Sources */,
+				8AC982822D4A864B00AEED49 /* ProfileModel.swift in Sources */,
+				8A37A64B2CEA434C00372155 /* Coordinator.swift in Sources */,
+				8A22A4932D33F358007A1F7D /* PasscodeValidationPresenter.swift in Sources */,
+				8AC982882D4A913000AEED49 /* AppConfiguration.swift in Sources */,
 				8A0C63172CA0187800AE8C65 /* DefaultVC.swift in Sources */,
+				8A34CD9E2CE8D29300D055A1 /* PasscodeView.swift in Sources */,
+				8A34CDA22CE8E44200D055A1 /* ProgressIndicatorView.swift in Sources */,
+				8A2C4E7C2D0B610400C8CB01 /* GridView.swift in Sources */,
+				8A37A6512CEB792F00372155 /* PromptLabel.swift in Sources */,
+				8A9BB02A2CB5B33100E47076 /* PinCodeSetupFlow.swift in Sources */,
 				8A0C631E2CA0A0C500AE8C65 /* ContextHolder.swift in Sources */,
-				8A0C63372CA9F97300AE8C65 /* PinEntryKeypadView.swift in Sources */,
-				8A7277E72C97302000C03C73 /* PinPresenter.swift in Sources */,
+				8A0C63372CA9F97300AE8C65 /* PinCodeView.KeypadView.swift in Sources */,
 				8A0C63202CA0ADB500AE8C65 /* ScreenDefinition.swift in Sources */,
-				8A7277F82C99B13300C03C73 /* KeychainManager.swift in Sources */,
-				8A0C632B2CA18F1900AE8C65 /* PinEntryModel.swift in Sources */,
+				8AC982802D4A85EF00AEED49 /* ProfileViewController.swift in Sources */,
+				8A7277F82C99B13300C03C73 /* KeychainService.swift in Sources */,
+				8A0C632B2CA18F1900AE8C65 /* PinCodeModel.swift in Sources */,
+				8AC982842D4A883300AEED49 /* ProfilePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,8 +576,8 @@
 				INFOPLIST_FILE = TravelTracker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,9 +585,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = unknown.TravelTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -490,8 +606,8 @@
 				INFOPLIST_FILE = TravelTracker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -499,9 +615,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = unknown.TravelTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
