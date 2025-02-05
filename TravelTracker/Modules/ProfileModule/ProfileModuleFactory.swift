@@ -10,7 +10,7 @@ final class ProfileModuleFactory: Factory {
     typealias ViewController = ProfileViewController
     typealias Context = Any?
     
-    func build(with context: Any?) throws -> ProfileViewController {
+    func build(with _: Context) throws -> ProfileViewController {
         let presenter = ProfilePresenter()
 
         let view = UIView()
