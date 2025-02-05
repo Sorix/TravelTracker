@@ -4,6 +4,5 @@
 
 
 struct ProfileModel {
-    
     let username: String
 }

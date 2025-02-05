@@ -12,9 +12,7 @@ final class ProfileModuleFactory: Factory {
     
     func build(with _: Context) throws -> ProfileViewController {
         let presenter = ProfilePresenter()
-
-        let view = UIView()
-        let viewController = ProfileViewController(presenter: presenter, customView: view)
+        let viewController = ProfileViewController(presenter: presenter)
         return viewController
     }
 }

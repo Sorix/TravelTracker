@@ -3,6 +3,5 @@
 //
 
 class ProfilePresenter: PresenterProtocol {
-    
     func viewDidLoad() {}
 }
