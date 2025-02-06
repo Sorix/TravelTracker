@@ -3,5 +3,15 @@
 //
 
 class ProfilePresenter: PresenterProtocol {
-    func viewDidLoad() {}
+  
+    weak var viewController: ProfileViewControllerProtocol?
+    var model: ProfileModel
+    
+    init(model: ProfileModel) {
+        self.model = model
+    }
+    
+    func viewDidLoad() {
+        viewController?.configure(with: model)
+    }
 }

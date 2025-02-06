@@ -5,7 +5,7 @@
 import UIKit
 
 protocol ProfileViewControllerProtocol: AnyObject {
-    func configure(with model: PasscodeModel)
+    func configure(with model: ProfileModel)
 }
 
 final class ProfileViewController: UIViewController {
@@ -18,6 +18,7 @@ final class ProfileViewController: UIViewController {
     }()
     
     init(presenter: PresenterProtocol) {
+
         self.presenter = presenter
         super.init(nibName: nil, bundle: nil)
     }
@@ -37,9 +38,11 @@ final class ProfileViewController: UIViewController {
     }
 }
 
-extension ProfileViewController: PasscodeViewControllerProtocol {
+
+extension ProfileViewController: ProfileViewControllerProtocol {
     
-    func configure(with model: PasscodeModel) {
+    func configure(with model: ProfileModel) {
+        customView.configure(with: model)
     }
 }
 

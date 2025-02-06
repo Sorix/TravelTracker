@@ -5,4 +5,5 @@
 
 struct ProfileModel {
     let username: String
+    var email: String?
 }
