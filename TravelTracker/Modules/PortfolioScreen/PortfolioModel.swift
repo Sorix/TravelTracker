@@ -4,6 +4,16 @@
 
 
 struct PortfolioModel {
+    var state: State?
     let username: String
-    var email: String?
+    var coins: [CoinModel] = []
+}
+
+extension PortfolioModel {
+    
+    enum State {
+        case normal
+        case loading
+        case failure
+    }
 }
