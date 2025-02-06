@@ -33,28 +33,32 @@ enum AppConfiguration {
         )
         .assemble()
     )
-    .adding(PasscodeRoutingInterceptor<Any?>())
+    .adding(PasscodeRoutingInterceptor<Void>())
     .using(GeneralAction.replaceRoot())
     .from(GeneralStep.root())
     .assemble()
     
-    static var profileScreen = StepAssembly(
-            finder: ClassFinder<ProfileViewController, Any?>(),
-            factory: NilFactory())
-    
-    .from(tabBarScreen)
-    .assemble()
-    
-    static var settingsScreen = StepAssembly(
-            finder: ClassFinder<SettingsViewController, Any?>(),
-            factory: NilFactory())
-    
-    .from(tabBarScreen)
-    .assemble()
-    
-    static var passcodeScreen: DestinationStep<PasscodeViewController, Any?> {
+    static var profileScreen: DestinationStep<ProfileViewController, Void> {
         StepAssembly(
-            finder: ClassFinder<PasscodeViewController, Any?>(),
+            finder: ClassFinder<ProfileViewController, Void>(),
+            factory: NilFactory())
+        
+        .from(tabBarScreen)
+        .assemble()
+    }
+    
+    static var settingsScreen: DestinationStep<SettingsViewController, Void> {
+        StepAssembly(
+            finder: ClassFinder<SettingsViewController, Void>(),
+            factory: NilFactory())
+        
+        .from(tabBarScreen)
+        .assemble()
+    }
+    
+    static var passcodeScreen: DestinationStep<PasscodeViewController, Void> {
+        StepAssembly(
+            finder: ClassFinder<PasscodeViewController, Void>(),
             factory: PasscodeModuleFactory())
         
         .using(GeneralAction.presentModally())

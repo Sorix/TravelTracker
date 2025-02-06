@@ -12,7 +12,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: scene)
         window?.rootViewController = UIViewController()
         window?.makeKeyAndVisible()
-        try? DefaultRouter().navigate(to: AppConfiguration.settingsScreen, with: nil)
+        try? DefaultRouter().navigate(to: AppConfiguration.settingsScreen, with: ())
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

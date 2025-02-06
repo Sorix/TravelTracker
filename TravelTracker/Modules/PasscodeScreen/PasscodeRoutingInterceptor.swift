@@ -17,7 +17,7 @@ final class PasscodeRoutingInterceptor<Context>: RoutingInterceptor {
             return
         }
         
-        try? DefaultRouter().navigate(to: AppConfiguration.passcodeScreen, with: nil) { routingResult in
+        try? DefaultRouter().navigate(to: AppConfiguration.passcodeScreen, with: ()) { routingResult in
             guard routingResult.isSuccessful,
                   let viewController = ClassFinder<PasscodeViewController, Any?>().getViewController() else {
                 completion(.failure(RoutingError.compositionFailed(.init("LoginViewController was not found."))))

@@ -8,9 +8,9 @@ import RouteComposer
 final class SettingsModuleFactory: Factory {
     
     typealias ViewController = SettingsViewController
-    typealias Context = Any?
+    typealias Context = Void
     
-    func build(with _: Any?) throws -> SettingsViewController {
+    func build(with _: Void) throws -> SettingsViewController {
         let model = SettingsModel(isDarkModeEnabled: true)
         let presenter = SettingsPresenter(model: model)
         let viewController = SettingsViewController(presenter: presenter)

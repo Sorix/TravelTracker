@@ -8,9 +8,9 @@ import RouteComposer
 final class PasscodeModuleFactory: Factory {
     
     typealias ViewController = PasscodeViewController
-    typealias Context = Any?
+    typealias Context = Void
     
-    func build(with context: Any?) throws -> PasscodeViewController {
+    func build(with _: Void) throws -> PasscodeViewController {
         let model = PasscodeModel(length: 4)
         let presenter = PasscodeValidationPresenter(model: model, passcodeManager: PasscodeManager.shared)
         let view = PasscodeView()
