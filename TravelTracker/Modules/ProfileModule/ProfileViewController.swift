@@ -4,20 +4,21 @@
 
 import UIKit
 
-
 protocol ProfileViewControllerProtocol: AnyObject {
     func configure(with model: PasscodeModel)
 }
 
-
 final class ProfileViewController: UIViewController {
     
     private let presenter: PresenterProtocol
-    private let customView: PasscodeViewProtocol
+    private lazy var customView: UIView = {
+        let view = UIView()
+        view.backgroundColor = UIColor(named: "bg")
+        return view
+    }()
     
-    init(presenter: PresenterProtocol, customView: PasscodeViewProtocol) {
+    init(presenter: PresenterProtocol) {
         self.presenter = presenter
-        self.customView = customView
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -36,12 +37,9 @@ final class ProfileViewController: UIViewController {
     }
 }
 
-//MARK: - PasscodeEntryViewController Extension
-
 extension ProfileViewController: PasscodeViewControllerProtocol {
     
     func configure(with model: PasscodeModel) {
-        customView.configure(with: model)
     }
 }
 
