@@ -9,7 +9,7 @@ final class ProfileView: UIView {
     private lazy var promptLabel: UILabel = {
         let label = UILabel()
         label.textColor = .white
-        label.font = UIFont.systemFont(ofSize: 32, weight: .bold)
+        label.font = UIFont.preferredFont(forTextStyle: UIFont.TextStyle.headline)
         return label
     }()
     
@@ -34,7 +34,6 @@ final class ProfileView: UIView {
 }
 
 private extension ProfileView {
-    
     enum Configuration {
         static let verticalOffset: CGFloat = 64
     }
