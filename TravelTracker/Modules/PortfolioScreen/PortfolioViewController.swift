@@ -4,15 +4,15 @@
 
 import UIKit
 
-protocol ProfileViewControllerProtocol: AnyObject {
-    func configure(with model: ProfileModel)
+protocol PortfolioViewControllerProtocol: AnyObject {
+    func configure(with model: PortfolioModel)
 }
 
-final class ProfileViewController: UIViewController {
+final class PortfolioViewController: UIViewController {
     
     private let presenter: PresenterProtocol
-    private lazy var customView: ProfileView = {
-        let view = ProfileView()
+    private lazy var customView: PortfolioView = {
+        let view = PortfolioView()
         view.backgroundColor = UIColor(named: "bg")
         return view
     }()
@@ -39,9 +39,9 @@ final class ProfileViewController: UIViewController {
 }
 
 
-extension ProfileViewController: ProfileViewControllerProtocol {
+extension PortfolioViewController: PortfolioViewControllerProtocol {
     
-    func configure(with model: ProfileModel) {
+    func configure(with model: PortfolioModel) {
         customView.configure(with: model)
     }
 }

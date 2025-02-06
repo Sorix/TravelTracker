@@ -2,12 +2,12 @@
 //  Created by Алексей on 29.01.2025.
 //
 
-class ProfilePresenter: PresenterProtocol {
+class PortfolioPresenter: PresenterProtocol {
   
-    weak var viewController: ProfileViewControllerProtocol?
-    var model: ProfileModel
+    weak var viewController: PortfolioViewControllerProtocol?
+    var model: PortfolioModel
     
-    init(model: ProfileModel) {
+    init(model: PortfolioModel) {
         self.model = model
     }
     

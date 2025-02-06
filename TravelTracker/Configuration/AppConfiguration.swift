@@ -18,7 +18,7 @@ enum AppConfiguration {
                     $0.tabBarItem.image = .init(systemName: "person")
                 }
             )
-            .with(ProfileModuleFactory())
+            .with(PortfolioModuleFactory())
             .assemble()
         )
         .with(
@@ -38,9 +38,9 @@ enum AppConfiguration {
     .from(GeneralStep.root())
     .assemble()
     
-    static var profileScreen: DestinationStep<ProfileViewController, Void> {
+    static var profileScreen: DestinationStep<PortfolioViewController, Void> {
         StepAssembly(
-            finder: ClassFinder<ProfileViewController, Void>(),
+            finder: ClassFinder<PortfolioViewController, Void>(),
             factory: NilFactory())
         
         .from(tabBarScreen)

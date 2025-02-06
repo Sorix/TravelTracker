@@ -4,7 +4,7 @@
 
 import UIKit
 
-final class ProfileView: UIView {
+final class PortfolioView: UIView {
     
     private lazy var promptLabel: UILabel = {
         let label = UILabel()
@@ -28,12 +28,12 @@ final class ProfileView: UIView {
         setupLayout()
     }
     
-    func configure(with model: ProfileModel) {
+    func configure(with model: PortfolioModel) {
         promptLabel.text = model.username
     }
 }
 
-private extension ProfileView {
+private extension PortfolioView {
     enum Configuration {
         static let verticalOffset: CGFloat = 64
     }

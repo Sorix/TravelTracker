@@ -40,23 +40,25 @@
 		8A3A9D9E2D54E51E00F76E0A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3A9D9A2D54E51E00F76E0A /* SettingsView.swift */; };
 		8A3A9D9F2D54E51E00F76E0A /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3A9D962D54E51E00F76E0A /* SettingsModel.swift */; };
 		8A3A9DA02D54E51E00F76E0A /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3A9D982D54E51E00F76E0A /* SettingsPresenter.swift */; };
+		8A3A9DAA2D552E5500F76E0A /* CoinService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3A9DA92D552E4E00F76E0A /* CoinService.swift */; };
 		8A7277C82C9728BD00C03C73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7277C72C9728BD00C03C73 /* AppDelegate.swift */; };
 		8A7277CA2C9728BD00C03C73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7277C92C9728BD00C03C73 /* SceneDelegate.swift */; };
 		8A7277D22C9728BD00C03C73 /* TravelTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8A7277D02C9728BD00C03C73 /* TravelTracker.xcdatamodeld */; };
 		8A7277D42C9728BF00C03C73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A7277D32C9728BF00C03C73 /* Assets.xcassets */; };
 		8A7277D72C9728BF00C03C73 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8A7277D62C9728BF00C03C73 /* Base */; };
 		8A7277F82C99B13300C03C73 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7277F72C99B13300C03C73 /* KeychainService.swift */; };
-		8A789CD82D52848100FB7D33 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A789CD72D52847600FB7D33 /* ProfileView.swift */; };
+		8A789CD82D52848100FB7D33 /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A789CD72D52847600FB7D33 /* PortfolioView.swift */; };
 		8A9A2E082CB6F874002E8C63 /* FlowHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9A2E072CB6F86E002E8C63 /* FlowHolder.swift */; };
 		8A9BB0232CB0512800E47076 /* PinCodeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9BB0222CB0512300E47076 /* PinCodeService.swift */; };
 		8A9BB0282CB59BCA00E47076 /* PinCodeEntryFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9BB0272CB59BC500E47076 /* PinCodeEntryFlow.swift */; };
 		8A9BB02A2CB5B33100E47076 /* PinCodeSetupFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9BB0292CB5B32B00E47076 /* PinCodeSetupFlow.swift */; };
 		8AC9827E2D4A859100AEED49 /* ProfileModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9827D2D4A858900AEED49 /* ProfileModuleFactory.swift */; };
-		8AC982802D4A85EF00AEED49 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9827F2D4A85E600AEED49 /* ProfileViewController.swift */; };
-		8AC982822D4A864B00AEED49 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC982812D4A864400AEED49 /* ProfileModel.swift */; };
-		8AC982842D4A883300AEED49 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC982832D4A882D00AEED49 /* ProfilePresenter.swift */; };
+		8AC982802D4A85EF00AEED49 /* PortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9827F2D4A85E600AEED49 /* PortfolioViewController.swift */; };
+		8AC982822D4A864B00AEED49 /* PortfolioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC982812D4A864400AEED49 /* PortfolioModel.swift */; };
+		8AC982842D4A883300AEED49 /* PortfolioPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC982832D4A882D00AEED49 /* PortfolioPresenter.swift */; };
 		8AC982882D4A913000AEED49 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC982872D4A912900AEED49 /* AppConfiguration.swift */; };
 		8AC9828A2D4B63A200AEED49 /* PasscodeRoutingInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC982892D4B638100AEED49 /* PasscodeRoutingInterceptor.swift */; };
+		8AE1B7FE2D552EA000FF8D1F /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE1B7FD2D552E9300FF8D1F /* CoinModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +93,7 @@
 		8A3A9D982D54E51E00F76E0A /* SettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
 		8A3A9D992D54E51E00F76E0A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		8A3A9D9A2D54E51E00F76E0A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		8A3A9DA92D552E4E00F76E0A /* CoinService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinService.swift; sourceTree = "<group>"; };
 		8A7277C42C9728BD00C03C73 /* TravelTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A7277C72C9728BD00C03C73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A7277C92C9728BD00C03C73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,17 +102,18 @@
 		8A7277D62C9728BF00C03C73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A7277D82C9728BF00C03C73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A7277F72C99B13300C03C73 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
-		8A789CD72D52847600FB7D33 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		8A789CD72D52847600FB7D33 /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
 		8A9A2E072CB6F86E002E8C63 /* FlowHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowHolder.swift; sourceTree = "<group>"; };
 		8A9BB0222CB0512300E47076 /* PinCodeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCodeService.swift; sourceTree = "<group>"; };
 		8A9BB0272CB59BC500E47076 /* PinCodeEntryFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCodeEntryFlow.swift; sourceTree = "<group>"; };
 		8A9BB0292CB5B32B00E47076 /* PinCodeSetupFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCodeSetupFlow.swift; sourceTree = "<group>"; };
 		8AC9827D2D4A858900AEED49 /* ProfileModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModuleFactory.swift; sourceTree = "<group>"; };
-		8AC9827F2D4A85E600AEED49 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		8AC982812D4A864400AEED49 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
-		8AC982832D4A882D00AEED49 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		8AC9827F2D4A85E600AEED49 /* PortfolioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioViewController.swift; sourceTree = "<group>"; };
+		8AC982812D4A864400AEED49 /* PortfolioModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioModel.swift; sourceTree = "<group>"; };
+		8AC982832D4A882D00AEED49 /* PortfolioPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioPresenter.swift; sourceTree = "<group>"; };
 		8AC982872D4A912900AEED49 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
 		8AC982892D4B638100AEED49 /* PasscodeRoutingInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeRoutingInterceptor.swift; sourceTree = "<group>"; };
+		8AE1B7FD2D552E9300FF8D1F /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +224,15 @@
 			path = TabBarScreen;
 			sourceTree = "<group>";
 		};
+		8A3A9DAB2D552E6300F76E0A /* CoinService */ = {
+			isa = PBXGroup;
+			children = (
+				8AE1B7FD2D552E9300FF8D1F /* CoinModel.swift */,
+				8A3A9DA92D552E4E00F76E0A /* CoinService.swift */,
+			);
+			path = CoinService;
+			sourceTree = "<group>";
+		};
 		8A7277BB2C9728BD00C03C73 = {
 			isa = PBXGroup;
 			children = (
@@ -257,7 +270,7 @@
 			children = (
 				8A3A9DA32D54ED2C00F76E0A /* TabBarScreen */,
 				8A3A9D952D54E01900F76E0A /* SettingsScreen */,
-				8AC9827C2D4A84DA00AEED49 /* ProfileScreen */,
+				8AC9827C2D4A84DA00AEED49 /* PortfolioScreen */,
 				8A34CD972CE8D1A200D055A1 /* PasscodeScreen */,
 				8AC982852D4A8DEA00AEED49 /* Temp */,
 			);
@@ -286,6 +299,7 @@
 		8A7277F52C99B11100C03C73 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				8A3A9DAB2D552E6300F76E0A /* CoinService */,
 				8A37A64E2CEB4F1C00372155 /* PasscodeManager.swift */,
 				8A9BB0222CB0512300E47076 /* PinCodeService.swift */,
 				8A7277F72C99B13300C03C73 /* KeychainService.swift */,
@@ -296,7 +310,7 @@
 		8A789CD62D52845E00FB7D33 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8A789CD72D52847600FB7D33 /* ProfileView.swift */,
+				8A789CD72D52847600FB7D33 /* PortfolioView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -328,16 +342,16 @@
 			path = Presenters;
 			sourceTree = "<group>";
 		};
-		8AC9827C2D4A84DA00AEED49 /* ProfileScreen */ = {
+		8AC9827C2D4A84DA00AEED49 /* PortfolioScreen */ = {
 			isa = PBXGroup;
 			children = (
 				8A789CD62D52845E00FB7D33 /* Views */,
-				8AC982832D4A882D00AEED49 /* ProfilePresenter.swift */,
-				8AC982812D4A864400AEED49 /* ProfileModel.swift */,
-				8AC9827F2D4A85E600AEED49 /* ProfileViewController.swift */,
+				8AC982832D4A882D00AEED49 /* PortfolioPresenter.swift */,
+				8AC982812D4A864400AEED49 /* PortfolioModel.swift */,
+				8AC9827F2D4A85E600AEED49 /* PortfolioViewController.swift */,
 				8AC9827D2D4A858900AEED49 /* ProfileModuleFactory.swift */,
 			);
-			path = ProfileScreen;
+			path = PortfolioScreen;
 			sourceTree = "<group>";
 		};
 		8AC982852D4A8DEA00AEED49 /* Temp */ = {
@@ -439,6 +453,7 @@
 				8A37A64F2CEB4F2100372155 /* PasscodeManager.swift in Sources */,
 				8A2C4E7E2D0B62BD00C8CB01 /* KeypadView.swift in Sources */,
 				8A0C63192CA0199200AE8C65 /* DefaultFactory.swift in Sources */,
+				8AE1B7FE2D552EA000FF8D1F /* CoinModel.swift in Sources */,
 				8A0C63292CA18EDD00AE8C65 /* PinCodeFactory.swift in Sources */,
 				8A9BB0282CB59BCA00E47076 /* PinCodeEntryFlow.swift in Sources */,
 				8A0C63152C9FF19100AE8C65 /* ApplicationConfiguration.swift in Sources */,
@@ -464,11 +479,12 @@
 				8A3A9D9F2D54E51E00F76E0A /* SettingsModel.swift in Sources */,
 				8A3A9DA02D54E51E00F76E0A /* SettingsPresenter.swift in Sources */,
 				8A7277CA2C9728BD00C03C73 /* SceneDelegate.swift in Sources */,
-				8AC982822D4A864B00AEED49 /* ProfileModel.swift in Sources */,
+				8AC982822D4A864B00AEED49 /* PortfolioModel.swift in Sources */,
 				8A22A4932D33F358007A1F7D /* PasscodeValidationPresenter.swift in Sources */,
 				8AC982882D4A913000AEED49 /* AppConfiguration.swift in Sources */,
 				8A0C63172CA0187800AE8C65 /* DefaultVC.swift in Sources */,
 				8A34CD9E2CE8D29300D055A1 /* PasscodeView.swift in Sources */,
+				8A3A9DAA2D552E5500F76E0A /* CoinService.swift in Sources */,
 				8A34CDA22CE8E44200D055A1 /* ProgressIndicatorView.swift in Sources */,
 				8A2C4E7C2D0B610400C8CB01 /* GridView.swift in Sources */,
 				8A37A6512CEB792F00372155 /* PromptLabel.swift in Sources */,
@@ -476,11 +492,11 @@
 				8A0C631E2CA0A0C500AE8C65 /* ContextHolder.swift in Sources */,
 				8A0C63372CA9F97300AE8C65 /* PinCodeView.KeypadView.swift in Sources */,
 				8A0C63202CA0ADB500AE8C65 /* ScreenDefinition.swift in Sources */,
-				8AC982802D4A85EF00AEED49 /* ProfileViewController.swift in Sources */,
+				8AC982802D4A85EF00AEED49 /* PortfolioViewController.swift in Sources */,
 				8A7277F82C99B13300C03C73 /* KeychainService.swift in Sources */,
 				8A0C632B2CA18F1900AE8C65 /* PinCodeModel.swift in Sources */,
-				8A789CD82D52848100FB7D33 /* ProfileView.swift in Sources */,
-				8AC982842D4A883300AEED49 /* ProfilePresenter.swift in Sources */,
+				8A789CD82D52848100FB7D33 /* PortfolioView.swift in Sources */,
+				8AC982842D4A883300AEED49 /* PortfolioPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

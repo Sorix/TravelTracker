@@ -3,7 +3,7 @@
 //
 
 
-struct ProfileModel {
+struct PortfolioModel {
     let username: String
     var email: String?
 }
