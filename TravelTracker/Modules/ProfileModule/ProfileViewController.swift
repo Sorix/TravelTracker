@@ -4,20 +4,22 @@
 
 import UIKit
 
-
 protocol ProfileViewControllerProtocol: AnyObject {
     func configure(with model: ProfileModel)
 }
 
-
 final class ProfileViewController: UIViewController {
     
     private let presenter: PresenterProtocol
-    private let customView: ProfileView
+    private lazy var customView: UIView = {
+        let view = UIView()
+        view.backgroundColor = UIColor(named: "bg")
+        return view
+    }()
     
-    init(presenter: PresenterProtocol, customView: ProfileView) {
+    init(presenter: PresenterProtocol) {
+
         self.presenter = presenter
-        self.customView = customView
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -35,6 +37,7 @@ final class ProfileViewController: UIViewController {
         presenter.viewDidLoad()
     }
 }
+
 
 extension ProfileViewController: ProfileViewControllerProtocol {
     

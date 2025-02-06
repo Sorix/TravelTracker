@@ -3,7 +3,7 @@
 //
 
 class ProfilePresenter: PresenterProtocol {
-    
+  
     weak var viewController: ProfileViewControllerProtocol?
     var model: ProfileModel
     
