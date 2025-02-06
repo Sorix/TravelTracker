@@ -10,6 +10,16 @@ enum AppConfiguration {
         StepAssembly(
             finder: ClassFinder<ProfileViewController, Any?>(),
             factory: ProfileModuleFactory())
+        
+        .using(GeneralAction.replaceRoot())
+        .from(GeneralStep.root())
+        .assemble()
+    }
+    
+    static var settingsScreen: DestinationStep<SettingsViewController, Any?> {
+        StepAssembly(
+            finder: ClassFinder<SettingsViewController, Any?>(),
+            factory: SettingsModuleFactory())
             .adding(PasscodeRoutingInterceptor<Any?>())
         
         .using(GeneralAction.replaceRoot())

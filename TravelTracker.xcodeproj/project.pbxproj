@@ -35,6 +35,11 @@
 		8A37A64F2CEB4F2100372155 /* PasscodeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A37A64E2CEB4F1C00372155 /* PasscodeManager.swift */; };
 		8A37A6512CEB792F00372155 /* PromptLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A37A6502CEB791600372155 /* PromptLabel.swift */; };
 		8A37A6532CEBC8F300372155 /* PasscodeModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A37A6522CEBC8E400372155 /* PasscodeModuleFactory.swift */; };
+		8A3A9D9C2D54E51E00F76E0A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3A9D992D54E51E00F76E0A /* SettingsViewController.swift */; };
+		8A3A9D9D2D54E51E00F76E0A /* SettingsModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3A9D972D54E51E00F76E0A /* SettingsModuleFactory.swift */; };
+		8A3A9D9E2D54E51E00F76E0A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3A9D9A2D54E51E00F76E0A /* SettingsView.swift */; };
+		8A3A9D9F2D54E51E00F76E0A /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3A9D962D54E51E00F76E0A /* SettingsModel.swift */; };
+		8A3A9DA02D54E51E00F76E0A /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3A9D982D54E51E00F76E0A /* SettingsPresenter.swift */; };
 		8A7277C82C9728BD00C03C73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7277C72C9728BD00C03C73 /* AppDelegate.swift */; };
 		8A7277CA2C9728BD00C03C73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7277C92C9728BD00C03C73 /* SceneDelegate.swift */; };
 		8A7277D22C9728BD00C03C73 /* TravelTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8A7277D02C9728BD00C03C73 /* TravelTracker.xcdatamodeld */; };
@@ -81,6 +86,11 @@
 		8A37A64E2CEB4F1C00372155 /* PasscodeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeManager.swift; sourceTree = "<group>"; };
 		8A37A6502CEB791600372155 /* PromptLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptLabel.swift; sourceTree = "<group>"; };
 		8A37A6522CEBC8E400372155 /* PasscodeModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeModuleFactory.swift; sourceTree = "<group>"; };
+		8A3A9D962D54E51E00F76E0A /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
+		8A3A9D972D54E51E00F76E0A /* SettingsModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModuleFactory.swift; sourceTree = "<group>"; };
+		8A3A9D982D54E51E00F76E0A /* SettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
+		8A3A9D992D54E51E00F76E0A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		8A3A9D9A2D54E51E00F76E0A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		8A7277C42C9728BD00C03C73 /* TravelTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A7277C72C9728BD00C03C73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A7277C92C9728BD00C03C73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -159,7 +169,7 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		8A34CD972CE8D1A200D055A1 /* PasscodeModule */ = {
+		8A34CD972CE8D1A200D055A1 /* PasscodeScreen */ = {
 			isa = PBXGroup;
 			children = (
 				8AA0169B2D48CC8600964091 /* Presenters */,
@@ -169,7 +179,7 @@
 				8A34CD982CE8D1C900D055A1 /* PasscodeModel.swift */,
 				8A34CD9A2CE8D25D00D055A1 /* PasscodeViewController.swift */,
 			);
-			path = PasscodeModule;
+			path = PasscodeScreen;
 			sourceTree = "<group>";
 		};
 		8A34CD9C2CE8D28300D055A1 /* Views */ = {
@@ -179,6 +189,26 @@
 				8A34CD9D2CE8D28E00D055A1 /* PasscodeView.swift */,
 				8A37A6502CEB791600372155 /* PromptLabel.swift */,
 				8A34CDA12CE8E43400D055A1 /* ProgressIndicatorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8A3A9D952D54E01900F76E0A /* SettingsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				8A3A9D962D54E51E00F76E0A /* SettingsModel.swift */,
+				8A3A9D972D54E51E00F76E0A /* SettingsModuleFactory.swift */,
+				8A3A9D982D54E51E00F76E0A /* SettingsPresenter.swift */,
+				8A3A9D992D54E51E00F76E0A /* SettingsViewController.swift */,
+				8A3A9D9B2D54E51E00F76E0A /* Views */,
+			);
+			path = SettingsScreen;
+			sourceTree = "<group>";
+		};
+		8A3A9D9B2D54E51E00F76E0A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8A3A9D9A2D54E51E00F76E0A /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -218,8 +248,9 @@
 		8A7277DE2C9728DE00C03C73 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				8AC9827C2D4A84DA00AEED49 /* ProfileModule */,
-				8A34CD972CE8D1A200D055A1 /* PasscodeModule */,
+				8A3A9D952D54E01900F76E0A /* SettingsScreen */,
+				8AC9827C2D4A84DA00AEED49 /* ProfileScreen */,
+				8A34CD972CE8D1A200D055A1 /* PasscodeScreen */,
 				8AC982852D4A8DEA00AEED49 /* Temp */,
 			);
 			path = Modules;
@@ -289,7 +320,7 @@
 			path = Presenters;
 			sourceTree = "<group>";
 		};
-		8AC9827C2D4A84DA00AEED49 /* ProfileModule */ = {
+		8AC9827C2D4A84DA00AEED49 /* ProfileScreen */ = {
 			isa = PBXGroup;
 			children = (
 				8A789CD62D52845E00FB7D33 /* Views */,
@@ -298,7 +329,7 @@
 				8AC9827F2D4A85E600AEED49 /* ProfileViewController.swift */,
 				8AC9827D2D4A858900AEED49 /* ProfileModuleFactory.swift */,
 			);
-			path = ProfileModule;
+			path = ProfileScreen;
 			sourceTree = "<group>";
 		};
 		8AC982852D4A8DEA00AEED49 /* Temp */ = {
@@ -419,6 +450,11 @@
 				8A37A6532CEBC8F300372155 /* PasscodeModuleFactory.swift in Sources */,
 				8A0C631C2CA084E800AE8C65 /* Handler.swift in Sources */,
 				8A22A48D2D33CDED007A1F7D /* PresenterProtocol.swift in Sources */,
+				8A3A9D9C2D54E51E00F76E0A /* SettingsViewController.swift in Sources */,
+				8A3A9D9D2D54E51E00F76E0A /* SettingsModuleFactory.swift in Sources */,
+				8A3A9D9E2D54E51E00F76E0A /* SettingsView.swift in Sources */,
+				8A3A9D9F2D54E51E00F76E0A /* SettingsModel.swift in Sources */,
+				8A3A9DA02D54E51E00F76E0A /* SettingsPresenter.swift in Sources */,
 				8A7277CA2C9728BD00C03C73 /* SceneDelegate.swift in Sources */,
 				8AC982822D4A864B00AEED49 /* ProfileModel.swift in Sources */,
 				8A22A4932D33F358007A1F7D /* PasscodeValidationPresenter.swift in Sources */,

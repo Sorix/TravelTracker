@@ -11,9 +11,8 @@ final class ProfileModuleFactory: Factory {
     typealias Context = Any?
     
     func build(with _: Any?) throws -> ProfileViewController {
-        let model = ProfileModel(username: "@Someuser")
+        let model = ProfileModel(username: "@ProfileScreen")
         let presenter = ProfilePresenter(model: model)
-        let view = ProfileView()
         let viewController = ProfileViewController(presenter: presenter)
         presenter.viewController = viewController
         return viewController

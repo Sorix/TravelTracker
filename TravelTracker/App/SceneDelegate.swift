@@ -13,6 +13,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.rootViewController = UIViewController()
         window?.makeKeyAndVisible()
         try? DefaultRouter().navigate(to: AppConfiguration.profileScreen, with: nil)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+            try? DefaultRouter().navigate(to: AppConfiguration.settingsScreen, with: nil)
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
