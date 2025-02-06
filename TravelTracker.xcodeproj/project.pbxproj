@@ -213,6 +213,13 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		8A3A9DA32D54ED2C00F76E0A /* TabBarScreen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TabBarScreen;
+			sourceTree = "<group>";
+		};
 		8A7277BB2C9728BD00C03C73 = {
 			isa = PBXGroup;
 			children = (
@@ -248,6 +255,7 @@
 		8A7277DE2C9728DE00C03C73 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				8A3A9DA32D54ED2C00F76E0A /* TabBarScreen */,
 				8A3A9D952D54E01900F76E0A /* SettingsScreen */,
 				8AC9827C2D4A84DA00AEED49 /* ProfileScreen */,
 				8A34CD972CE8D1A200D055A1 /* PasscodeScreen */,
