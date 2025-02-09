@@ -45,9 +45,7 @@ final class PortfolioView: UIView {
         tableView.refreshControl = refreshControl
     }
     
-    override func viewDidLoad() {
-        
-    }
+
     
     func configure(with model: PortfolioModel) {
 
