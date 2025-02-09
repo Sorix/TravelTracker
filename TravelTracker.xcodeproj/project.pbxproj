@@ -52,6 +52,7 @@
 		8A9BB0232CB0512800E47076 /* PinCodeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9BB0222CB0512300E47076 /* PinCodeService.swift */; };
 		8A9BB0282CB59BCA00E47076 /* PinCodeEntryFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9BB0272CB59BC500E47076 /* PinCodeEntryFlow.swift */; };
 		8A9BB02A2CB5B33100E47076 /* PinCodeSetupFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9BB0292CB5B32B00E47076 /* PinCodeSetupFlow.swift */; };
+		8AA560492D58EEF700601EE3 /* CoinListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA560482D58EEF000601EE3 /* CoinListView.swift */; };
 		8AC9827E2D4A859100AEED49 /* ProfileModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9827D2D4A858900AEED49 /* ProfileModuleFactory.swift */; };
 		8AC982802D4A85EF00AEED49 /* PortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9827F2D4A85E600AEED49 /* PortfolioViewController.swift */; };
 		8AC982822D4A864B00AEED49 /* PortfolioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC982812D4A864400AEED49 /* PortfolioModel.swift */; };
@@ -107,6 +108,7 @@
 		8A9BB0222CB0512300E47076 /* PinCodeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCodeService.swift; sourceTree = "<group>"; };
 		8A9BB0272CB59BC500E47076 /* PinCodeEntryFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCodeEntryFlow.swift; sourceTree = "<group>"; };
 		8A9BB0292CB5B32B00E47076 /* PinCodeSetupFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCodeSetupFlow.swift; sourceTree = "<group>"; };
+		8AA560482D58EEF000601EE3 /* CoinListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListView.swift; sourceTree = "<group>"; };
 		8AC9827D2D4A858900AEED49 /* ProfileModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModuleFactory.swift; sourceTree = "<group>"; };
 		8AC9827F2D4A85E600AEED49 /* PortfolioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioViewController.swift; sourceTree = "<group>"; };
 		8AC982812D4A864400AEED49 /* PortfolioModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioModel.swift; sourceTree = "<group>"; };
@@ -310,6 +312,7 @@
 		8A789CD62D52845E00FB7D33 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8AA560482D58EEF000601EE3 /* CoinListView.swift */,
 				8A789CD72D52847600FB7D33 /* PortfolioView.swift */,
 			);
 			path = Views;
@@ -492,6 +495,7 @@
 				8A0C631E2CA0A0C500AE8C65 /* ContextHolder.swift in Sources */,
 				8A0C63372CA9F97300AE8C65 /* PinCodeView.KeypadView.swift in Sources */,
 				8A0C63202CA0ADB500AE8C65 /* ScreenDefinition.swift in Sources */,
+				8AA560492D58EEF700601EE3 /* CoinListView.swift in Sources */,
 				8AC982802D4A85EF00AEED49 /* PortfolioViewController.swift in Sources */,
 				8A7277F82C99B13300C03C73 /* KeychainService.swift in Sources */,
 				8A0C632B2CA18F1900AE8C65 /* PinCodeModel.swift in Sources */,

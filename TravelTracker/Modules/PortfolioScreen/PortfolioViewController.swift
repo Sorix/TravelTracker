@@ -10,7 +10,8 @@ protocol PortfolioViewControllerProtocol: AnyObject {
 
 final class PortfolioViewController: UIViewController {
     
-    private let presenter: PresenterProtocol
+    let presenter: PresenterProtocol
+    
     private lazy var customView: PortfolioView = {
         let view = PortfolioView()
         view.backgroundColor = UIColor(named: "bg")
@@ -18,7 +19,6 @@ final class PortfolioViewController: UIViewController {
     }()
     
     init(presenter: PresenterProtocol) {
-
         self.presenter = presenter
         super.init(nibName: nil, bundle: nil)
     }
@@ -38,11 +38,11 @@ final class PortfolioViewController: UIViewController {
     }
 }
 
-
 extension PortfolioViewController: PortfolioViewControllerProtocol {
     
     func configure(with model: PortfolioModel) {
         customView.configure(with: model)
     }
 }
+
 

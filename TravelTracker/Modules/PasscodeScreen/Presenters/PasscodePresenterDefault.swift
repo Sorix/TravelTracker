@@ -51,7 +51,6 @@ extension PasscodePresenterDefault {
     
     func updateProgressIndicator() {
         model.progressIndicator.updateIndicatorStates(with: model.passcode.count)
-        print(model.progressIndicator.indicatorStates.map { "\($0)" })
     }
     
     func updateView() {

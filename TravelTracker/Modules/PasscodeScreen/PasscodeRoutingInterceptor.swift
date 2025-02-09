@@ -5,7 +5,7 @@
 import UIKit
 import RouteComposer
 
-var isLoggedIn: Bool = false
+var isLoggedIn: Bool = true
 
 final class PasscodeRoutingInterceptor<Context>: RoutingInterceptor {
 

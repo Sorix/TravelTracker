@@ -11,13 +11,12 @@ final class PortfolioModuleFactory: Factory {
     typealias Context = Void
     
     func build(with _: Void) throws -> PortfolioViewController {
-        //let model = PortfolioModel(username: "@ProfileScreen")
         let presenter = PortfolioPresenter(dependencies:
                 .init(
                     coinService: CoinService())
         )
         let viewController = PortfolioViewController(presenter: presenter)
-        presenter.viewController = viewController
+        presenter.view = viewController
         return viewController
     }
 }

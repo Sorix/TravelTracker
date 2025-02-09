@@ -14,7 +14,7 @@ enum AppConfiguration {
         .with(
             CompleteFactoryAssembly(
                 factory: NavigationControllerFactory {
-                    $0.tabBarItem.title = "Profile"
+                    $0.tabBarItem.title = "Portfolio"
                     $0.tabBarItem.image = .init(systemName: "person")
                 }
             )
@@ -38,7 +38,7 @@ enum AppConfiguration {
     .from(GeneralStep.root())
     .assemble()
     
-    static var profileScreen: DestinationStep<PortfolioViewController, Void> {
+    static var portfolioScreen: DestinationStep<PortfolioViewController, Void> {
         StepAssembly(
             finder: ClassFinder<PortfolioViewController, Void>(),
             factory: NilFactory())
