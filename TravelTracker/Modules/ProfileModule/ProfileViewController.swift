@@ -11,8 +11,8 @@ protocol ProfileViewControllerProtocol: AnyObject {
 final class ProfileViewController: UIViewController {
     
     private let presenter: PresenterProtocol
-    private lazy var customView: UIView = {
-        let view = UIView()
+    private lazy var customView: ProfileView = {
+        let view = ProfileView()
         view.backgroundColor = UIColor(named: "bg")
         return view
     }()

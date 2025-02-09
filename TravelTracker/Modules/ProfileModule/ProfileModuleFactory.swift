@@ -14,7 +14,7 @@ final class ProfileModuleFactory: Factory {
         let model = ProfileModel(username: "@Someuser")
         let presenter = ProfilePresenter(model: model)
         let view = ProfileView()
-        let viewController = ProfileViewController(presenter: presenter, customView: view)
+        let viewController = ProfileViewController(presenter: presenter)
         presenter.viewController = viewController
         return viewController
     }
