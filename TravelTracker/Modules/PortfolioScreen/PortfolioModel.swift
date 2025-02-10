@@ -6,7 +6,7 @@ import Foundation
 
 struct PortfolioModel {
     var state: State?
-    var balance: Double?
+    var balance: Skeletoned<Double> = .skeleton
     var handlers = Handlers()
 }
 
@@ -24,12 +24,16 @@ extension PortfolioModel {
         var coinItemDidTap: Action?
     }
     
+    struct Coin {
+        let id: String
+        let name: String
+        let imageUrl: String
+        let priceUSD: Double
+    }
+    
     struct CoinList {
         var isCollapsed: Bool = true
-        let coins: [CoinModel]
-        
-        init(with coins: [CoinModel]) {
-            self.coins = coins
-        }
+        let coins: Skeletoned<[Coin]>
     }
 }
+

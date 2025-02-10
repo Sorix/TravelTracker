@@ -12,7 +12,7 @@
 		8A0C63152C9FF19100AE8C65 /* ApplicationConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0C63142C9FF18900AE8C65 /* ApplicationConfiguration.swift */; };
 		8A0C63172CA0187800AE8C65 /* DefaultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0C63162CA0187200AE8C65 /* DefaultVC.swift */; };
 		8A0C63192CA0199200AE8C65 /* DefaultFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0C63182CA0198800AE8C65 /* DefaultFactory.swift */; };
-		8A0C631C2CA084E800AE8C65 /* Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0C631B2CA084E500AE8C65 /* Handler.swift */; };
+		8A0C631C2CA084E800AE8C65 /* Action+Handler+ResultHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0C631B2CA084E500AE8C65 /* Action+Handler+ResultHandler.swift */; };
 		8A0C631E2CA0A0C500AE8C65 /* ContextHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0C631D2CA0A0BC00AE8C65 /* ContextHolder.swift */; };
 		8A0C63202CA0ADB500AE8C65 /* ScreenDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0C631F2CA0ADAF00AE8C65 /* ScreenDefinition.swift */; };
 		8A0C63232CA17E0400AE8C65 /* PinCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0C63222CA17DFE00AE8C65 /* PinCodeView.swift */; };
@@ -41,6 +41,9 @@
 		8A3A9D9F2D54E51E00F76E0A /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3A9D962D54E51E00F76E0A /* SettingsModel.swift */; };
 		8A3A9DA02D54E51E00F76E0A /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3A9D982D54E51E00F76E0A /* SettingsPresenter.swift */; };
 		8A3A9DAA2D552E5500F76E0A /* CoinService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3A9DA92D552E4E00F76E0A /* CoinService.swift */; };
+		8A5355322D5963F7001EE6B9 /* Skeletoned.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5355312D5963F0001EE6B9 /* Skeletoned.swift */; };
+		8A5355342D5A1587001EE6B9 /* PortfolioCoinCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5355332D5A157A001EE6B9 /* PortfolioCoinCell.swift */; };
+		8A5355362D5A1631001EE6B9 /* PortfolioSkeletonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5355352D5A162A001EE6B9 /* PortfolioSkeletonCell.swift */; };
 		8A7277C82C9728BD00C03C73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7277C72C9728BD00C03C73 /* AppDelegate.swift */; };
 		8A7277CA2C9728BD00C03C73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7277C92C9728BD00C03C73 /* SceneDelegate.swift */; };
 		8A7277D22C9728BD00C03C73 /* TravelTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8A7277D02C9728BD00C03C73 /* TravelTracker.xcdatamodeld */; };
@@ -52,7 +55,6 @@
 		8A9BB0232CB0512800E47076 /* PinCodeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9BB0222CB0512300E47076 /* PinCodeService.swift */; };
 		8A9BB0282CB59BCA00E47076 /* PinCodeEntryFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9BB0272CB59BC500E47076 /* PinCodeEntryFlow.swift */; };
 		8A9BB02A2CB5B33100E47076 /* PinCodeSetupFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9BB0292CB5B32B00E47076 /* PinCodeSetupFlow.swift */; };
-		8AA560492D58EEF700601EE3 /* CoinListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA560482D58EEF000601EE3 /* CoinListView.swift */; };
 		8AC9827E2D4A859100AEED49 /* ProfileModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9827D2D4A858900AEED49 /* ProfileModuleFactory.swift */; };
 		8AC982802D4A85EF00AEED49 /* PortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9827F2D4A85E600AEED49 /* PortfolioViewController.swift */; };
 		8AC982822D4A864B00AEED49 /* PortfolioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC982812D4A864400AEED49 /* PortfolioModel.swift */; };
@@ -66,7 +68,7 @@
 		8A0C63142C9FF18900AE8C65 /* ApplicationConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationConfiguration.swift; sourceTree = "<group>"; };
 		8A0C63162CA0187200AE8C65 /* DefaultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultVC.swift; sourceTree = "<group>"; };
 		8A0C63182CA0198800AE8C65 /* DefaultFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultFactory.swift; sourceTree = "<group>"; };
-		8A0C631B2CA084E500AE8C65 /* Handler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Handler.swift; sourceTree = "<group>"; };
+		8A0C631B2CA084E500AE8C65 /* Action+Handler+ResultHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Action+Handler+ResultHandler.swift"; sourceTree = "<group>"; };
 		8A0C631D2CA0A0BC00AE8C65 /* ContextHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextHolder.swift; sourceTree = "<group>"; };
 		8A0C631F2CA0ADAF00AE8C65 /* ScreenDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenDefinition.swift; sourceTree = "<group>"; };
 		8A0C63222CA17DFE00AE8C65 /* PinCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCodeView.swift; sourceTree = "<group>"; };
@@ -95,6 +97,9 @@
 		8A3A9D992D54E51E00F76E0A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		8A3A9D9A2D54E51E00F76E0A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		8A3A9DA92D552E4E00F76E0A /* CoinService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinService.swift; sourceTree = "<group>"; };
+		8A5355312D5963F0001EE6B9 /* Skeletoned.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skeletoned.swift; sourceTree = "<group>"; };
+		8A5355332D5A157A001EE6B9 /* PortfolioCoinCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioCoinCell.swift; sourceTree = "<group>"; };
+		8A5355352D5A162A001EE6B9 /* PortfolioSkeletonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioSkeletonCell.swift; sourceTree = "<group>"; };
 		8A7277C42C9728BD00C03C73 /* TravelTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A7277C72C9728BD00C03C73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A7277C92C9728BD00C03C73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,7 +113,6 @@
 		8A9BB0222CB0512300E47076 /* PinCodeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCodeService.swift; sourceTree = "<group>"; };
 		8A9BB0272CB59BC500E47076 /* PinCodeEntryFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCodeEntryFlow.swift; sourceTree = "<group>"; };
 		8A9BB0292CB5B32B00E47076 /* PinCodeSetupFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCodeSetupFlow.swift; sourceTree = "<group>"; };
-		8AA560482D58EEF000601EE3 /* CoinListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListView.swift; sourceTree = "<group>"; };
 		8AC9827D2D4A858900AEED49 /* ProfileModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModuleFactory.swift; sourceTree = "<group>"; };
 		8AC9827F2D4A85E600AEED49 /* PortfolioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioViewController.swift; sourceTree = "<group>"; };
 		8AC982812D4A864400AEED49 /* PortfolioModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioModel.swift; sourceTree = "<group>"; };
@@ -170,7 +174,6 @@
 			isa = PBXGroup;
 			children = (
 				8A2C4E7B2D0B60FB00C8CB01 /* GridView.swift */,
-				8A0C631B2CA084E500AE8C65 /* Handler.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -228,6 +231,15 @@
 			path = CoinService;
 			sourceTree = "<group>";
 		};
+		8A5355302D5963EA001EE6B9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8A0C631B2CA084E500AE8C65 /* Action+Handler+ResultHandler.swift */,
+				8A5355312D5963F0001EE6B9 /* Skeletoned.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		8A7277BB2C9728BD00C03C73 = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +259,7 @@
 		8A7277C62C9728BD00C03C73 /* TravelTracker */ = {
 			isa = PBXGroup;
 			children = (
+				8A5355302D5963EA001EE6B9 /* Helpers */,
 				8AC982862D4A911600AEED49 /* Configuration */,
 				8A7277F52C99B11100C03C73 /* Services */,
 				8A7277F22C997FD200C03C73 /* Protocols */,
@@ -304,7 +317,8 @@
 		8A789CD62D52845E00FB7D33 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8AA560482D58EEF000601EE3 /* CoinListView.swift */,
+				8A5355352D5A162A001EE6B9 /* PortfolioSkeletonCell.swift */,
+				8A5355332D5A157A001EE6B9 /* PortfolioCoinCell.swift */,
 				8A789CD72D52847600FB7D33 /* PortfolioView.swift */,
 			);
 			path = Views;
@@ -466,8 +480,9 @@
 				8A9A2E082CB6F874002E8C63 /* FlowHolder.swift in Sources */,
 				8A34CD9B2CE8D26500D055A1 /* PasscodeViewController.swift in Sources */,
 				8A37A6532CEBC8F300372155 /* PasscodeModuleFactory.swift in Sources */,
-				8A0C631C2CA084E800AE8C65 /* Handler.swift in Sources */,
+				8A0C631C2CA084E800AE8C65 /* Action+Handler+ResultHandler.swift in Sources */,
 				8A22A48D2D33CDED007A1F7D /* PresenterProtocol.swift in Sources */,
+				8A5355322D5963F7001EE6B9 /* Skeletoned.swift in Sources */,
 				8A3A9D9C2D54E51E00F76E0A /* SettingsViewController.swift in Sources */,
 				8A3A9D9D2D54E51E00F76E0A /* SettingsModuleFactory.swift in Sources */,
 				8A3A9D9E2D54E51E00F76E0A /* SettingsView.swift in Sources */,
@@ -476,6 +491,7 @@
 				8A7277CA2C9728BD00C03C73 /* SceneDelegate.swift in Sources */,
 				8AC982822D4A864B00AEED49 /* PortfolioModel.swift in Sources */,
 				8A22A4932D33F358007A1F7D /* PasscodeValidationPresenter.swift in Sources */,
+				8A5355362D5A1631001EE6B9 /* PortfolioSkeletonCell.swift in Sources */,
 				8AC982882D4A913000AEED49 /* AppConfiguration.swift in Sources */,
 				8A0C63172CA0187800AE8C65 /* DefaultVC.swift in Sources */,
 				8A34CD9E2CE8D29300D055A1 /* PasscodeView.swift in Sources */,
@@ -485,9 +501,9 @@
 				8A37A6512CEB792F00372155 /* PromptLabel.swift in Sources */,
 				8A9BB02A2CB5B33100E47076 /* PinCodeSetupFlow.swift in Sources */,
 				8A0C631E2CA0A0C500AE8C65 /* ContextHolder.swift in Sources */,
+				8A5355342D5A1587001EE6B9 /* PortfolioCoinCell.swift in Sources */,
 				8A0C63372CA9F97300AE8C65 /* PinCodeView.KeypadView.swift in Sources */,
 				8A0C63202CA0ADB500AE8C65 /* ScreenDefinition.swift in Sources */,
-				8AA560492D58EEF700601EE3 /* CoinListView.swift in Sources */,
 				8AC982802D4A85EF00AEED49 /* PortfolioViewController.swift in Sources */,
 				8A7277F82C99B13300C03C73 /* KeychainService.swift in Sources */,
 				8A0C632B2CA18F1900AE8C65 /* PinCodeModel.swift in Sources */,

@@ -25,8 +25,8 @@ class PortfolioPresenter: PortfolioPresenterProtocol {
     }
     
     func updateCoinList() {
-        if case .loading = self.model.state { return }
-        self.model.state = .loading
+        if case .loading = model.state { return }
+        model.state = .loading
         
         dependencies.coinService.fetchCoins { [weak self] result in
             switch result {
@@ -40,10 +40,12 @@ class PortfolioPresenter: PortfolioPresenterProtocol {
                 }
             }
         }
+        configureView()
     }
 }
 
 extension PortfolioPresenter {
+    
     func viewDidLoad() {
         setupHandlers()
         configureView()
@@ -52,13 +54,18 @@ extension PortfolioPresenter {
 
 private extension PortfolioPresenter {
     
-    func handleUpdateCoinList(with coins: [CoinModel]) {
-        self.model.state = .normal(.init(with: coins))
-        self.model.balance = coins.reduce(0.0, { $0 + $1.priceUSD })
+    func handleUpdateCoinList(with coins: [PortfolioModel.Coin]) {
+        let coinList = PortfolioModel.CoinList(coins: .value(coins))
+        self.model.state = .normal(coinList)
+        
+        let balance = coins.reduce(0.0, { $0 + $1.priceUSD })
+        self.model.balance = .value(balance)
+        
         self.configureView()
     }
     
     func handleUpdateCoinList(with error: Error) {
+        
         self.model.state = .error
         self.configureView()
     }

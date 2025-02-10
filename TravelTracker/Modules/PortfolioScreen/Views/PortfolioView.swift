@@ -6,7 +6,7 @@ import UIKit
 
 final class PortfolioView: UIView {
     
-    var coins: [CoinModel] = []
+    var coins: Skeletoned<[PortfolioModel.Coin]> = .skeleton
     
     private lazy var balanceLabel: UILabel = {
         let label = UILabel()
@@ -18,12 +18,12 @@ final class PortfolioView: UIView {
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.backgroundColor = UIColor(named: "bg")
-        tableView.register(CoinCell.self, forCellReuseIdentifier: "CoinCell")
+        tableView.register(PortfolioCoinCell.self, forCellReuseIdentifier: "CoinCell")
+        tableView.register(PortfolioSkeletonCell.self, forCellReuseIdentifier: "SkeletonCell")
         tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView
     }()
     
-    //Refresh control
     private lazy var refreshControl = UIRefreshControl()
     
     override init(frame: CGRect) {
@@ -39,32 +39,35 @@ final class PortfolioView: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         setupLayout()
-        
-        //Refresh control
-        refreshControl.addTarget(self, action: #selector(refreshData), for: .valueChanged)
-        tableView.refreshControl = refreshControl
     }
-    
 
-    
     func configure(with model: PortfolioModel) {
 
-        if model.state == nil {
-            model.handlers.updateCoinListTap?()
+        
+        if case .value(let balance) = model.balance {
+            balanceLabel.text = "Your balance is \(balance) $"
+       // } else if case .loading = model.state {
+       //     balanceLabel.text = "loading.."
+        } else {
+            balanceLabel.text = "[SKELETON]"
         }
         
-        balanceLabel.text = "Your balance is \(model.balance ?? 0) $"
         
         if case .normal(let coinList) = model.state {
             coins = coinList.coins
+        }
+        
+        if model.state == nil {
+            refreshControl.addTarget(self, action: #selector(refreshData), for: .valueChanged)
+            tableView.refreshControl = refreshControl
+            
+            model.handlers.updateCoinListTap?()
         }
         
         tableView.reloadData()
     }
     
     @objc private func refreshData() {
-        //((superview as! PortfolioViewController).presenter as! PortfolioPresenter).updateCoinList()
-        //presenter.loadPortfolio()
     }
 }
 
@@ -98,15 +101,26 @@ private extension PortfolioView {
 extension PortfolioView: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return coins.count
+        switch coins {
+        case .skeleton: 5
+        case .value(let coins): coins.count
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "CoinCell", for: indexPath) as? CoinCell else {
-            return UITableViewCell()
+        switch coins {
+        case .value(let coins):
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "CoinCell", for: indexPath) as? PortfolioCoinCell else {
+                return UITableViewCell()
+            }
+            let coin = coins[indexPath.row]
+            cell.configure(with: coin)
+            return cell
+        case .skeleton:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "SkeletonCell", for: indexPath) as? PortfolioCoinCell else {
+                return UITableViewCell()
+            }
+            return cell
         }
-        let coin = coins[indexPath.row]
-        cell.configure(with: coin)
-        return cell
     }
 }
